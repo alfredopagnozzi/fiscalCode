@@ -1,18 +1,18 @@
 package com.example.demo.model;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 
-public class DateBirthAndAge {
+public class Info {
 
-    private Date dateBirth;
+    private LocalDate dateBirth;
     private Integer age;
 
-    public Date getDateBirth() {
+    public LocalDate getDateBirth() {
         return dateBirth;
     }
 
-    public void setDateBirth(Date dateBirth) {
+    public void setDateBirth(LocalDate dateBirth) {
         this.dateBirth = dateBirth;
     }
 
@@ -24,11 +24,11 @@ public class DateBirthAndAge {
         this.age = age;
     }
 
-    public DateBirthAndAge(Date  dateBirth, Integer age) {
+    public Info(LocalDate  dateBirth, Integer age) {
         this.dateBirth = dateBirth;
         this.age = age;
     }
 
-    public DateBirthAndAge() {
+    public Info() {
     }
 }
